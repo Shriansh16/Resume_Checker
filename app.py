@@ -1,7 +1,7 @@
 import streamlit as st
 import PyPDF2 as pdf
 from openai import OpenAI
-client = OpenAI(st.secrets["api_key"])
+client = OpenAI(api_key=st.secrets["openai_api_key"])
 #genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_response(input):
